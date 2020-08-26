@@ -1,6 +1,6 @@
 using System;
 
-class MainClass {
+class Calculadora {
 
   public static double mult (int num1, int num2) {
     return num1 * num2;
