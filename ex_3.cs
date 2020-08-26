@@ -30,6 +30,15 @@ public class MainClass
       Console.WriteLine("|--------------------------|");
       Console.WriteLine("|     "+VotosVN+" - Votos nulos      |");
       Console.WriteLine("|--------------------------|");
+      if (VotosJC > VotosJB && VotosJC > VotosRN) {
+        Console.WriteLine("O vencedor foi: José Couve");
+      } else if (VotosJB > VotosJC && VotosJB > VotosRN) {
+        Console.WriteLine("O vencedor foi: Joana Bravo");
+      } else if (VotosRN > VotosJC && VotosRN > VotosJB) {
+        Console.WriteLine("O vencedor foi: Roberto Nove");
+      } else {
+        Console.WriteLine("Não houve um vencedor!");
+      }
     }
 
     public static void Votacao() {
